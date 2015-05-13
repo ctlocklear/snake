@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* clear out everything */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* set body */
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 1em 0;
+  border-bottom: 1px solid black;
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  border: 1px solid red;
+  padding: 0.5em;
+  margin: 1em 0;
+}
+
+ul {
+  list-style: none;
+  width: 502px; // 20 * 25px + 2 * 1px;
+  height: 502px;
+
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+ul:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+li {
+  float: left;
+
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+
+  background: lightcyan;
+}
+
+li.snake-head {
+  background: gold;
+}
+
+li.snake-body {
+  background: forestgreen;
+}
+
+li.apple {
+  background: hotpink;
+}
